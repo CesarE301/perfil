@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <div class="container mt-5 "> 
+            <div class="row justify-content-center">
+                <div class="card mb-3 text-bg-info" style="max-width: 5400px;">
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <img src="#{resource[perfil.foto]}" class="img-fluid rounded-start mr-2" alt="..."/>
+                        </div>
+                        <div class="col-md-8 text-bg-info">
+                            <div class="card-body text-bg-info">
+                                <h5 class="card-title">#{perfil.nombre}</h5>
+                                <h6 class="card-title">Ingenieros en #{perfil.carrera}</h6>
+                                <p class="card-text">lenguajes de programacion manejados: #{perfil.lenguajesDeProgramacion}</p>
+                                <p class="card-text">base de datos que manejamos: #{perfil.basesDeDatos}</p>
+                                <p class="card-text">participaciones: #{perfil.proyectos}</p>
+                                <p class="card-text">promedio: #{perfil.promedio}</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </h:body>
+</html>
